@@ -80,10 +80,12 @@ public class DriverLessCar implements ICar {
     }
 
     public void move(Command[] commands) throws OutOfBoundException {
+        System.out.println("1111");
         for (Command command : commands) {
             move(command);
         }
     }
+
     public void move(ArrayList<Command> commands)throws OutOfBoundException{
         for (Command command : commands) {
             move(command);

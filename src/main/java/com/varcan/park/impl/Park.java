@@ -1,13 +1,14 @@
 package com.varcan.park.impl;
 
 import com.varcan.car.Position;
+import com.varcan.park.IPark;
 
 /**
  * Date:2019-08-18
  * Author: var.can
  * Desc:
  */
-public class Park {
+public class Park implements IPark {
     private int x;
     private int y;
 
@@ -32,6 +33,7 @@ public class Park {
         this.y = y;
     }
 
+    @Override
     public boolean isNotInPark(Position pos){
         return pos.getX()<=0 || pos.getX()>this.x || pos.getY()<=0 || pos.getY() >this.y;
     }

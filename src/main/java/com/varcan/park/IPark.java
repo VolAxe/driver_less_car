@@ -8,5 +8,5 @@ import com.varcan.car.Position;
  * Desc:
  */
 public interface IPark {
-    void isNotInPark(Position pos);
+    boolean isNotInPark(Position pos);
 }
